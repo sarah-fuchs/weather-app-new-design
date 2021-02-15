@@ -1,0 +1,153 @@
+body{
+    font-family: arial, sans-serif;
+    background-image: url(images/ff9aff3c2f9dc7607cf6b81729d11bbb.jpg);
+    opacity: 0.99;
+    background-size: 70%;
+    
+}
+
+
+h1 {
+    color: #6A6E6F;
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    
+}
+
+li {
+    list-style: none;
+    color: rgb(135, 135, 135);
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 19px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    color:#2bb3a9;
+    border-top: 2px solid;
+    opacity: 0.7;   
+    
+}
+.btn-dark {
+    background-color: #494949; 
+    border: white;
+}
+
+.btn-dark:hover {
+    background-color: #6b6d6d 
+}
+
+.weather-app-wrapper {
+    max-width: 640px;
+    margin: 30px auto;
+    margin-top: 99px;
+    background-image: url(images/lined-paper-backgrounds-lovely-school-themed-lined-writing-paper-a4-lined-paper-image-this-week-of-lined-paper-backgrounds.jpg);
+    background-size: 100%;
+}
+
+.weather-app {
+    padding: 40px;
+    border: 4px solid #494949;
+    border-radius: 8px;
+}
+
+.overview {
+    margin-bottom: 10px;
+}
+
+.weather-temperature img {
+    margin-right: 5px;
+    float: left;
+    height: 64px;
+    width: 64px;
+}
+
+.weather-temperature strong {
+    color: rgb(33, 33, 33);
+    font-size: 64px;
+    font-weight: 400;
+    height: auto;
+    line-height: 1;
+    text-align: left;
+}
+
+.weather-temperature .units {
+    position: relative;
+    font-size: 16px;
+    top: -34px;
+}
+
+.weather-temperature .active {
+    color: rgb(33, 33, 33);
+    cursor: default;
+}
+.weather-forecast {
+    margin-top: 10px;
+  }
+  
+  .weather-forecast h3 {
+    color: #878787;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    height: 15px;
+    line-height: 15px;
+    padding-top: 7px;
+  }
+  
+  .weather-forecast img {
+    display: block;
+    margin: 0 auto;
+    height: 48px;
+    width: 48px;
+    opacity: 1;
+  }
+  
+  .weather-forecast-temperature {
+    text-align: center;
+    color: rgb(135, 135, 135);
+    font-size: 13px;
+    font-weight: 400;
+    height: auto;
+    line-height: 15px;
+    white-space: nowrap;
+  }
+
+#description {
+    text-transform: capitalize;
+}
+
+#open-source {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+#country {
+    color: #6A6E6F;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+#weathergirl {
+    position: fixed;
+    bottom: 100px; 
+    left: 10px;
+    opacity:0.6;
+    width: 500px;
+}
