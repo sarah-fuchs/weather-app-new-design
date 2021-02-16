@@ -148,7 +148,7 @@ function searchPosition(position) {
   axios.get(apiUrl).then(displayTemperature);
 
   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=${unit}&appid=${apiKey}`;
-    axios.get(apiUrl).then(displayForecast);
+  axios.get(apiUrl).then(displayForecast);
 
 
 }
@@ -192,9 +192,9 @@ function searchPorto(event) {
   event.preventDefault();
   search("Porto");
 }
-function searchCopenhagen(event) {
+function searchPlovdiv(event) {
   event.preventDefault();
-  search("Copenhagen");
+  search("Plovdiv");
 }
 function searchAntananarivo(event) {
   event.preventDefault();
@@ -208,8 +208,8 @@ let clickLima = document.querySelector("#lima");
 clickLima.addEventListener("click", searchLima);
 let clickPorto = document.querySelector("#porto");
 clickPorto.addEventListener("click", searchPorto);
-let clickCopenhagen = document.querySelector("#copenhagen");
-clickCopenhagen.addEventListener("click", searchCopenhagen);
+let clickPlovdiv = document.querySelector("#plovdiv");
+clickPlovdiv.addEventListener("click", searchPlovdiv);
 let clickAntananarivo = document.querySelector("#antananarivo");
 clickAntananarivo.addEventListener("click", searchAntananarivo);
 let clickHavana = document.querySelector("#havana");
