@@ -1,15 +1,15 @@
 body{
-    font-family: arial, sans-serif;
-    background-image: url(images/ff9aff3c2f9dc7607cf6b81729d11bbb.jpg);
-    opacity: 0.99;
-    background-size: 70%;
+    font-family: monospace;
+    background-image: url(images/lined-paper-backgrounds-lovely-school-themed-lined-writing-paper-a4-lined-paper-image-this-week-of-lined-paper-backgrounds.jpg);
+    opacity: 0.9;
+    background-size: 90%;
     
 }
 
 
 h1 {
-    color: #6A6E6F;
-    font-size: 28px;
+    color: #878787;
+    font-size: 24px;
     font-weight: 100;
     line-height: 28px;
     margin-bottom: 0;
@@ -36,32 +36,55 @@ a {
 }
 
 hr {
-    color:#2bb3a9;
+    color:#878787;;
     border-top: 2px solid;
     opacity: 0.7;   
     
 }
-.btn-dark {
-    background-color: #494949; 
-    border: white;
-}
-
+ul li a {
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    font-family: 'Reenie Beanie';
+    font-size: 25px;
+    display:block;
+    height:110px;
+    width:110px;
+    padding: 20px;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transform: rotate(-6deg);
+    transition: transform.15s linear;
+  }
+  
+  ul li:nth-child(even) a {
+    transform:rotate(4deg);
+    position:relative;
+    font-size: 22px;
+    padding-top: 35px;
+    top:5px;
+    background:#cfc;
+  }
+  ul li:nth-child(3n) a {
+    transform:rotate(-3deg);
+    position:relative;
+    padding-top: 30px;
+    padding-right: 10px;
+    top:-5px;
+    background:#ccf;
+  }
 .btn-dark:hover {
-    background-color: #6b6d6d 
+    background-color:#3d3b3b
 }
-
 .weather-app-wrapper {
-    max-width: 640px;
+    max-width: 610px;
     margin: 30px auto;
-    margin-top: 99px;
-    background-image: url(images/lined-paper-backgrounds-lovely-school-themed-lined-writing-paper-a4-lined-paper-image-this-week-of-lined-paper-backgrounds.jpg);
-    background-size: 100%;
+    margin-top: 54px;  
+    background-color: white;
 }
-
 .weather-app {
-    padding: 40px;
-    border: 4px solid #494949;
-    border-radius: 8px;
+    padding: 20px;
+    border: 2px solid #878787;
+    border-radius: 4px;
 }
 
 .overview {
@@ -115,7 +138,6 @@ hr {
     width: 48px;
     opacity: 1;
   }
-  
   .weather-forecast-temperature {
     text-align: center;
     color: rgb(135, 135, 135);
@@ -125,29 +147,41 @@ hr {
     line-height: 15px;
     white-space: nowrap;
   }
-
+  .sticky-note{
+    margin:16px;
+  }
+ #sticky-note-pad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 #description {
     text-transform: capitalize;
 }
-
 #open-source {
     text-align: center;
     font-size: 13px;
     margin-top: 0;
 }
-
 #country {
-    color: #6A6E6F;
+    color: #878787;
     font-size: 24px;
     font-weight: 100;
     line-height: 28px;
     margin-bottom: 0;
 }
-
 #weathergirl {
     position: fixed;
     bottom: 100px; 
     left: 10px;
     opacity:0.6;
     width: 500px;
+}
+#antananarivo{
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 9px;
+}
+#lima{
+    padding-left: 36px;  
 }
