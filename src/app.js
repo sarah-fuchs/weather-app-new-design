@@ -145,7 +145,10 @@ function searchPosition(position) {
   let unit = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=${unit}&appid=${apiKey}`;
 
-  axios.get(apiUrl).then(search);
+  axios.get(apiUrl).then(displayTemperature);
+
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=${unit}&appid=${apiKey}`;
+    axios.get(apiUrl).then(displayForecast);
 
 
 }
