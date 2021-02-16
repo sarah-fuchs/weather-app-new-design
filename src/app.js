@@ -136,6 +136,24 @@ event.preventDefault();
 let cityInputElement= document.querySelector("#city-input");
 search(cityInputElement.value);
 }
+
+// Current Location Button
+function searchPosition(position) {
+  let apiKey = "11c6b1943d69dd9ab2b79eb46ab8283b";
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let unit = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=${unit}&appid=${apiKey}`;
+
+  axios.get(apiUrl).then(search);
+
+
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchPosition);
+}
 // Conversion to Fahrenheit | Celsius
 function displayFahrenheitTemperature(event) {
 event.preventDefault();
@@ -199,6 +217,9 @@ let celsiusFeels = null;
 
 let form= document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let requestLocalWeather = document.querySelector("#location");
+requestLocalWeather.addEventListener("click", getCurrentLocation);
 
 let fahrenheitLink=document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
