@@ -1,6 +1,6 @@
 body{
     font-family: monospace;
-    background-image: url(images/lined-paper-backgrounds-lovely-school-themed-lined-writing-paper-a4-lined-paper-image-this-week-of-lined-paper-backgrounds.jpg);
+    background-color: white;
     opacity: 0.9;
     background-size: 90%; 
 }
@@ -84,7 +84,7 @@ ul li a {
     max-width: 610px;
     margin: 30px auto;
     margin-top: 54px;  
-    background-color: white;
+    background-image: url(images/lined-paper-backgrounds-lovely-school-themed-lined-writing-paper-a4-lined-paper-image-this-week-of-lined-paper-backgrounds.jpg);
     border: 5px solid #5A5A5C;  
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
     
