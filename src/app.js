@@ -59,7 +59,7 @@ if (minutes < 10) {
 return `${hours}:${minutes}`;
 
 }
-// Search Form
+// Search Form and Forecasts
 
 function displayTemperature(response) {
 console.log(response.data.main.temp);
@@ -149,8 +149,6 @@ function searchPosition(position) {
 
   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=${unit}&appid=${apiKey}`;
   axios.get(apiUrl).then(displayForecast);
-
-
 }
 
 function getCurrentLocation(event) {
