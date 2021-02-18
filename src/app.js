@@ -230,4 +230,7 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
+
+
 search("Vienna");
+
