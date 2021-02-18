@@ -78,7 +78,7 @@ ul li a {
 .btn-light:hover {
     border: solid 2px #41403E;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    background-color: #f7f3eb;
+    background-color: #f5f5f5;
 }
 .weather-app-wrapper {
     max-width: 610px;
@@ -194,4 +194,5 @@ ul li a {
 
 #city-input{
     border: 2px solid #3d3b3b;
+    font-family: monospace;
 }
